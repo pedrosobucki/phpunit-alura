@@ -19,4 +19,8 @@ $leiloeiro = new Avaliador();
 $leiloeiro->avalia($leilao);
 
 $maiorValor = $leiloeiro->getMaiorValor();
-echo $maiorValor;
+
+$valorEsperado = 2500;
+
+$result = ($valorEsperado == $maiorValor) ? "TESTE OK!" : "TESTE FALHOU!";
+echo $result;
